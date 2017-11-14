@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1200px) {
+  body header {
+    height: 50px; }
+    body header .container .logo-min {
+      height: 30px;
+      top: 50%;
+      margin-top: -15px;
+      margin-left: 50px; }
+      body header .container .logo-min .img-logo-min {
+        height: 30px; }
+    body header .container .nav-links .main-nav .nav-list {
+      justify-content: space-evenly;
+      font-size: 17px;
+      height: 50px; }
+      body header .container .nav-links .main-nav .nav-list li {
+        padding: 0 5px; } }
+@media only screen and (max-width: 992px) {
+  body header .container .img-logo {
+    display: none; }
+  body header .container .nav-links .main-nav .nav-list {
+    justify-content: center; }
+    body header .container .nav-links .main-nav .nav-list li {
+      padding: 5px 5px; } }
+@media only screen and (max-width: 723px) {
+  body header .container .nav-links .main-nav .nav-list .nav-a {
+    font-size: 15px;
+    padding: 0 2px !important; } }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  height: 100%;
+  background-color: #FDFBF8;
+  font-family: 'Raleway', sans-serif; }
+  html a, body a {
+    color: #171c20; }
+
+.sticky {
+  padding-top: 0;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  z-index: 2;
+  background-color: #FDFBF8; }
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #FDFBF8;
+  z-index: 2;
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  position: relative; }
+  header .container .nav-logo {
+    position: absolute; }
+  header .container .logo-min {
+    height: 50px;
+    top: 50%;
+    margin-top: -25px; }
+    header .container .logo-min .img-logo-min {
+      height: 50px; }
+  header .container .logo-min-sticky {
+    height: 30px;
+    top: 50%;
+    margin-top: -15px; }
+    header .container .logo-min-sticky .img-logo-sticky {
+      height: 30px;
+      content: url("../img/logos.png"); }
+  header .container .nav-links .main-nav .nav-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    height: 70px;
+    font-size: 20px; }
+    header .container .nav-links .main-nav .nav-list li {
+      list-style-type: none;
+      text-transform: uppercase; }
+      header .container .nav-links .main-nav .nav-list li .nav-a {
+        text-decoration: none;
+        padding: 0 5px; }
+        header .container .nav-links .main-nav .nav-list li .nav-a:hover {
+          border-bottom: 1px solid;
+          color: #171c20; }
+        header .container .nav-links .main-nav .nav-list li .nav-a:focus {
+          border-bottom: 1px solid;
+          color: #171c20; }
+      header .container .nav-links .main-nav .nav-list li .nav-a-sticky {
+        color: #666666; }
+        header .container .nav-links .main-nav .nav-list li .nav-a-sticky:hover {
+          border-bottom: 1px solid #666666;
+          color: #666666; }
+        header .container .nav-links .main-nav .nav-list li .nav-a-sticky:focus {
+          border-bottom: 1px solid;
+          color: #666666; }
+  header .container .nav-links .main-nav .nav-list-sticky {
+    height: 50px; }
+
+.gallery .item img {
+  height: 600px; }
+.gallery .slick-slide {
+  margin: 0 50px; }
+.gallery .slick-prev {
+  left: 80px;
+  z-index: 2; }
+.gallery .slick-next {
+  right: 100px;
+  z-index: 2; }
+.gallery .slick-prev:before, .gallery .slick-next:before {
+  font-size: 40px; }
+
+/*# sourceMappingURL=photo-style.css.map */

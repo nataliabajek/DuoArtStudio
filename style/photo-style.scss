@@ -1,0 +1,137 @@
+@import 'media-queries';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+$beige: #FDFBF8;
+$lightgrey-nav: #EFEFEF;
+$border-nav: #9A9A9A;
+$lightgrey: #CFD2D2;
+$darkgrey: #171c20;
+$gold: #E8CE7A; //#EB9D00;
+$gold2: #FFD559;
+
+//----------------------------------------------------------
+// 0. General
+//----------------------------------------------------------
+html, body{
+  height: 100%;
+  background-color: $beige;
+  font-family: 'Raleway', sans-serif;
+  a{
+    color: $darkgrey;
+  }
+}
+//----------------------------------------------------------
+// 1. Nav
+//----------------------------------------------------------
+.sticky{
+  padding-top: 0;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  z-index: 2;
+  background-color: $beige;
+}
+header{
+  width: 100%;
+  height: 70px;
+  background-color: $beige;
+  z-index: 2;
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  position: relative;
+  .container{
+    .nav-logo{
+      position: absolute;
+    }
+    .logo-min{
+      height: 50px;
+      top: 50%;
+      margin-top: -25px;
+      .img-logo-min{
+        height: 50px;
+      }
+    }
+    .logo-min-sticky{
+      height: 30px;
+      top: 50%;
+      margin-top: -15px;
+      .img-logo-sticky{
+        height: 30px;
+        content: url("../img/logos.png");
+      }
+    }
+    .nav-links{
+      .main-nav{
+        .nav-list{
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 0;
+          height: 70px;
+          font-size: 20px;
+          li{
+            list-style-type: none;
+            text-transform: uppercase;
+            .nav-a{
+              text-decoration: none;
+              padding: 0 5px;
+              &:hover{
+                border-bottom: 1px solid ;
+                color: $darkgrey;
+              }
+              &:focus{
+                border-bottom: 1px solid ;
+                color: $darkgrey;
+              }
+            }
+            .nav-a-sticky{
+              color: #666666;
+              &:hover{
+                border-bottom: 1px solid #666666;
+                color: #666666;
+              }
+              &:focus{
+                border-bottom: 1px solid;
+                color: #666666;
+              }          
+            }
+          }
+        }
+        .nav-list-sticky{
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+//----------------------------------------------------------
+// 2. Gallery
+//----------------------------------------------------------
+.gallery{
+	.item{
+		img{
+			height: 600px;
+		}
+	}
+	.slick-slide{
+		margin: 0 50px;
+	}
+	.slick-prev{
+		left: 80px;
+		z-index: 2;
+	}
+	.slick-next{
+		right: 100px;
+		z-index: 2;
+	}
+	.slick-prev:before, .slick-next:before{
+		font-size: 40px;
+	}
+}
