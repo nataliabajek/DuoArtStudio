@@ -41,36 +41,36 @@ $(document).ready(function() {
   //-----------------------------------------------------------
   // Sticky Navbar - fixed on scroll functionality
   //----------------------------------------------------------- 
-  // $(window).scroll(function(){
-  //   if ($(window).scrollTop() > 740){
-  //     $("nav").addClass("sticky");
-  //     $(".nav-logo").addClass("logo-min-sticky");
-  //     $(".nav-logo").removeClass("logo-min");
-  //     $(".img-logo").addClass("img-logo-sticky");
-  //     $(".img-logo").removeClass("img-logo-min");
-  //     $(".nav-list").addClass("nav-list-sticky");
-  //     $(".navbar-header").addClass("navbar-header-sticky");
-  //     //$(".nav-links").removeClass("col-lg-7 col-lg-offset-5 col-md-offset-3 col-md-9");
-  //     //$(".nav-links").addClass("col-lg-12 col-md-12");
-  //     //$(".nav-a").css("margin", "0 15px");
-  //     $(".nav-a").addClass("nav-a-sticky");
-  //     //$(".nav-list").css("justify-content", "center");
-  //   }
-  //   else {
-  //     $("nav").removeClass("sticky");
-  //     $(".nav-logo").removeClass("logo-min-sticky");
-  //     $(".nav-logo").addClass("logo-min");
-  //     $(".img-logo").removeClass("img-logo-sticky");
-  //     $(".img-logo").addClass("img-logo-min");
-  //     $(".nav-list").removeClass("nav-list-sticky");
-  //     $(".navbar-header").removeClass("navbar-header-sticky");
-  //     //$(".nav-links").addClass("col-lg-7 col-lg-offset-5 col-md-offset-3 col-md-9");
-  //     //$(".nav-links").removeClass("col-lg-12 col-md-12");
-  //     //$(".nav-a").css("margin", "0 5px");
-  //     $(".nav-a").removeClass("nav-a-sticky");
-  //     //$(".nav-list").css("justify-content", "space-between");
-  //   }
-  // });
+  $(window).scroll(function(){
+    if ($(window).scrollTop() > 740){
+      $("nav").addClass("sticky");
+      $(".nav-logo").addClass("logo-min-sticky");
+      $(".nav-logo").removeClass("logo-min");
+      $(".img-logo").addClass("img-logo-sticky");
+      $(".img-logo").removeClass("img-logo-min");
+      $(".nav-list").addClass("nav-list-sticky");
+      $(".navbar-header").addClass("navbar-header-sticky");
+      //$(".nav-links").removeClass("col-lg-7 col-lg-offset-5 col-md-offset-3 col-md-9");
+      //$(".nav-links").addClass("col-lg-12 col-md-12");
+      //$(".nav-a").css("margin", "0 15px");
+      $(".nav-a").addClass("nav-a-sticky");
+      //$(".nav-list").css("justify-content", "center");
+    }
+    else {
+      $("nav").removeClass("sticky");
+      $(".nav-logo").removeClass("logo-min-sticky");
+      $(".nav-logo").addClass("logo-min");
+      $(".img-logo").removeClass("img-logo-sticky");
+      $(".img-logo").addClass("img-logo-min");
+      $(".nav-list").removeClass("nav-list-sticky");
+      $(".navbar-header").removeClass("navbar-header-sticky");
+      //$(".nav-links").addClass("col-lg-7 col-lg-offset-5 col-md-offset-3 col-md-9");
+      //$(".nav-links").removeClass("col-lg-12 col-md-12");
+      //$(".nav-a").css("margin", "0 5px");
+      $(".nav-a").removeClass("nav-a-sticky");
+      //$(".nav-list").css("justify-content", "space-between");
+    }
+  });
   //-----------------------------------------------------------
   // Google Maps
   //----------------------------------------------------------- 
