@@ -146,9 +146,10 @@ html, body {
   padding-top: 0;
   position: fixed;
   top: 0;
-  height: 50px;
   z-index: 3;
-  background-color: #EAEAEA; }
+  background-color: white;
+  border-bottom: #CFD2D2 1px solid;
+  border-radius: 0; }
 
 .navbar {
   margin-bottom: 0; }
@@ -172,12 +173,12 @@ nav {
     nav .container-fluid .logo-min .img-logo-min {
       height: 50px; }
   nav .container-fluid .logo-min-sticky {
-    height: 30px;
+    height: 50px;
     top: 50%;
-    margin-top: -15px; }
+    margin-top: -25px; }
     nav .container-fluid .logo-min-sticky .img-logo-sticky {
-      height: 30px;
-      content: url("../img/logos.png"); }
+      height: 50px;
+      content: url("../img/logo-aparat-czarne.png"); }
   nav .container-fluid .navbar-header button i {
     color: #EFEFEF; }
   nav .container-fluid .navbar-header-sticky button i {

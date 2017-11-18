@@ -44,12 +44,12 @@ $(document).ready(function() {
   $(window).scroll(function(){
     if ($(window).scrollTop() > 740){
       $("nav").addClass("sticky");
-      $(".nav-logo").addClass("logo-min-sticky");
-      $(".nav-logo").removeClass("logo-min");
-      $(".img-logo").addClass("img-logo-sticky");
-      $(".img-logo").removeClass("img-logo-min");
-      $(".nav-list").addClass("nav-list-sticky");
-      $(".navbar-header").addClass("navbar-header-sticky");
+       $(".nav-logo").addClass("logo-min-sticky");
+       $(".nav-logo").removeClass("logo-min");
+       $(".img-logo").addClass("img-logo-sticky");
+      // $(".img-logo").removeClass("img-logo-min");
+      // $(".nav-list").addClass("nav-list-sticky");
+      // $(".navbar-header").addClass("navbar-header-sticky");
       //$(".nav-links").removeClass("col-lg-7 col-lg-offset-5 col-md-offset-3 col-md-9");
       //$(".nav-links").addClass("col-lg-12 col-md-12");
       //$(".nav-a").css("margin", "0 15px");
