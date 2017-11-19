@@ -80,6 +80,15 @@ html, body {
       vertical-align: middle;
       width: 30%;
       margin: 0 20px; }
+  html h2, body h2 {
+    color: #171c20;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px; }
   html .dark::before, body .dark::before {
     background: linear-gradient(90deg, #171c20, #CFD2D2); }
   html .dark::after, body .dark::after {
@@ -252,15 +261,6 @@ nav {
   color: #171c20;
   text-align: center;
   padding-bottom: 50px; }
-  #portfolio h2 {
-    color: #171c20;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 10px; }
 
 .photo-thumbb, .photo-thumbb > img, .photo-overlay, .photo-overlay > img {
   top: 0;
@@ -304,8 +304,12 @@ nav {
   padding-top: 70px;
   padding-bottom: 70px;
   font-weight: 500;
-  font-size: 18px;
-  text-align: justify; }
+  font-size: 16px;
+  text-align: center; }
+  #about .fa-stack {
+    margin-bottom: 15px;
+    font-size: 60px;
+    color: #666666; }
 
 #contact {
   text-align: center;

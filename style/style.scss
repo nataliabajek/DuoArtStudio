@@ -40,6 +40,16 @@ html, body{
       margin: 0 20px;
     }
   }
+  h2{
+    color: $darkgrey;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
   .dark{
     &::before{
       background: linear-gradient(90deg, $darkgrey, $lightgrey);
@@ -283,16 +293,6 @@ nav{
   color: $darkgrey;
   text-align: center;
   padding-bottom: 50px;
-  h2{
-    color: $darkgrey;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 10px;
-  }
 }
 .photo-thumbb, .photo-thumbb>img, .photo-overlay, .photo-overlay>img {
   top: 0;
@@ -347,8 +347,13 @@ nav{
   padding-top: 70px;
   padding-bottom: 70px;
   font-weight: 500;
-  font-size: 18px;
-  text-align: justify;
+  font-size: 16px;
+  text-align: center;
+  .fa-stack{
+    margin-bottom: 15px;
+    font-size: 60px;
+    color: #666666;
+  }
 }
 //----------------------------------------------------------
 // 7. Contact
