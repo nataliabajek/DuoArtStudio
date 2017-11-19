@@ -280,9 +280,26 @@ nav {
     position: absolute;
     z-index: 2;
     opacity: 0;
-    background: white; }
+    background: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; }
     .photo-thumbb .photo-overlay:hover {
-      opacity: 0.2; }
+      opacity: 0.9; }
+    .photo-thumbb .photo-overlay .photo-overlay-btn {
+      padding: 5px 0;
+      display: table;
+      margin: 0 auto; }
+      .photo-thumbb .photo-overlay .photo-overlay-btn a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        font-size: 20px;
+        padding: 0 5px; }
+        .photo-thumbb .photo-overlay .photo-overlay-btn a:hover {
+          border-bottom: 1px solid black; }
 
 #about {
   font-family: 'Raleway', sans-serif;
