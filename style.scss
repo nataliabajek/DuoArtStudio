@@ -1,0 +1,380 @@
+@import 'media-queries';
+@import 'jump';
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+$beige: #FDFBF8;
+$lightgrey-nav: #EFEFEF;
+$border-nav: #9A9A9A;
+$lightgrey: #CFD2D2;
+$darkgrey: #171c20;
+$gold: #E8CE7A;
+$gold2: #FFD559;
+
+//----------------------------------------------------------
+// 0. General
+//----------------------------------------------------------
+html, body{
+  height: 100%;
+  background-color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  a{
+    color: $lightgrey-nav;
+  }
+  h1{
+    text-transform: uppercase;
+    margin: 40px 0 50px 0;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    &::before, &::after {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      position: relative;
+      vertical-align: middle;
+      width: 30%;
+      margin: 0 20px;
+    }
+  }
+  .dark{
+    &::before{
+      background: linear-gradient(90deg, $darkgrey, $lightgrey);
+    }
+    &::after{
+      background: linear-gradient(90deg, $lightgrey, $darkgrey);
+    }
+  }
+  .light{
+    &::before{
+      background: linear-gradient(90deg, white, $darkgrey);
+    }
+    &::after{
+      background: linear-gradient(90deg, $darkgrey, white);
+    }
+  }
+  ul{
+    list-style-type: circle;
+  }
+ section{
+    padding: 20px 0 50px 0 ;
+  }
+}
+//----------------------------------------------------------
+// 1. Main Page
+//----------------------------------------------------------
+#main-page{
+  height: 100%;
+  top: -70px;
+  position: relative;
+  background: linear-gradient(to bottom, transparent 80%, #FFFFFF),
+      url("../img/tlo.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  .logo{
+    padding-top: 110px;
+    margin: 0;
+    img{
+      width: 400px;
+    }
+  }
+  a{
+    position: absolute;
+    bottom: 80px;
+    text-align: center;
+    -webkit-animation: jump 1.5s ease 0s infinite normal ;
+    animation: jump 1.5s ease 0s infinite normal ; 
+    i{
+      color: $darkgrey;
+      font-size: 45px;
+      opacity: 0.5;
+      &:hover{
+        color: #586363;
+      }
+    }
+  }
+}
+//----------------------------------------------------------
+// 1a. Nav
+//----------------------------------------------------------
+.sticky{
+  padding-top: 0;
+  position: fixed;
+  top: 0;
+  //height: 50px;
+  z-index: 3;
+  background-color: white;
+  border-bottom: $lightgrey 1px solid;
+  border-radius: 0;
+}
+.navbar{
+  margin-bottom: 0;
+}
+nav{
+  width: 100%;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  position: relative;
+  .container-fluid{
+    padding-left: 30px;
+    .nav-logo{
+      position: absolute;
+    }
+    .logo-min{
+      height: 50px;
+      top: 50%;
+      margin-top: -25px;
+      .img-logo-min{
+        height: 50px;
+      }
+    }
+    .logo-min-sticky{
+      height: 50px;
+      top: 50%;
+      margin-top: -25px;
+      .img-logo-sticky{
+        height: 50px;
+        content: url("../img/logo-aparat-czarne.png");
+      }
+    }
+    .navbar-header{
+      button{
+        i{
+          color: #EFEFEF;
+        }
+      }
+    }
+    .navbar-header-sticky{
+      button{
+        i{
+          color: #666666;
+        }
+      }
+    }
+    .nav-links.navbar-collapse.in{
+      overflow-y: visible;
+      .nav-list{
+        padding-top: 50px;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+      }
+    }
+    .nav-links{
+      .nav-list{
+        display: flex;
+       // flex-flow: row wrap;
+       // justify-content: space-between;
+        align-items: center;
+       // margin-bottom: 0;
+        height: 70px;
+        font-size: 20px;
+       // float: none;
+        li{
+          list-style-type: none;
+          text-transform: uppercase;
+          padding-left: 25px;
+          .nav-a{
+            text-decoration: none;
+            padding: 0 5px;
+            &:hover{
+              border-bottom: 1px solid ;
+              color: $lightgrey-nav;
+              background-color: transparent;
+            }
+            &:focus{
+              border-bottom: 1px solid ;
+              color: $lightgrey-nav;
+              background-color: transparent;
+            }
+          }
+          .nav-a-sticky{
+            color: #666666;
+            &:hover{
+              border-bottom: 1px solid #666666;
+              color: #666666;
+            }
+            &:focus{
+              border-bottom: 1px solid;
+              color: #666666;
+            }          
+          }
+        }
+      }
+      .nav-list-sticky{
+        height: 50px;
+      }
+    }
+  }
+}
+//----------------------------------------------------------
+// 2. Offert
+//----------------------------------------------------------
+#offert{
+  background-image: url("../img/oferta.jpg");
+  height: 95%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $darkgrey;
+  font-size: 17px;
+  text-align: center;
+  .offert-text{
+    text-align: center;
+    margin: 80px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 15px;
+    .offert-title{
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 5px 0;
+    }
+  }
+  .contact-btn-container{
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 15px 0;
+    .contact-button{
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      color: $darkgrey;
+      padding: 15px;
+      i{
+        padding-left: 20px;
+      }
+      &:hover{
+        color: $lightgrey-nav;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
+#area{
+  font-family: 'Raleway', sans-serif;//'Roboto Slab', serif;//'Roboto Mono', monospace;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  padding: 0;
+  margin: 40px 0;
+}
+//----------------------------------------------------------
+// 3. Portfolio
+//----------------------------------------------------------
+#portfolio{
+  color: $darkgrey;
+  text-align: center;
+  padding-bottom: 50px;
+  h2{
+    color: $darkgrey;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+.photo-thumbb, .photo-thumbb>img, .photo-overlay, .photo-overlay>img {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+.photo-thumbb{
+  position: relative;
+  margin-bottom: 20px;
+  .photo-overlay{
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    background: white;
+    &:hover{
+      opacity: 0.2;
+    }
+    .photo-overlay-btns{
+      //color:
+    }
+  }
+}
+
+//----------------------------------------------------------
+// 4. About
+//----------------------------------------------------------
+#about{
+  font-family: 'Raleway', sans-serif;//'Roboto Slab', serif;//'Roboto Mono', monospace;
+  margin-top: -70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: justify;
+}
+//----------------------------------------------------------
+// 7. Contact
+//----------------------------------------------------------
+#contact{
+  text-align: center;
+  background-color: $darkgrey;
+  color: $lightgrey;
+  font-size: 17px;
+  .container{
+    //padding: 50px 0;
+    .form-cont{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .label-cont{
+        font-weight: 400;
+      }
+      .input-cont{
+        width: 100%;
+        background-color: $lightgrey-nav;
+        color: $darkgrey;
+        border: none;
+      }
+      textarea{
+        background-color: $lightgrey-nav;
+        color: $darkgrey;
+        width: 100%;
+        height: 100px;
+        resize: vertical;
+      }
+      button{
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+    }
+    .item{
+      margin-bottom: 10px;
+    }
+    .fa-inverse{
+      color: $darkgrey;
+    }
+  }
+}
+//----------------------------------------------------------
+// 8. Footer
+//----------------------------------------------------------
+footer{
+  background-color: rgba(23,28,31,0.9);
+  height: 40px;
+  padding: 10px 0;
+  color: $lightgrey;
+}
