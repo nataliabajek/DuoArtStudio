@@ -22,7 +22,7 @@ $(document).ready(function() {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault();
           $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - 70
           }, 1000, function() {
             // Callback after animation
             // Must change focus!
@@ -42,7 +42,7 @@ $(document).ready(function() {
   // Sticky Navbar - fixed on scroll functionality
   //----------------------------------------------------------- 
   $(window).scroll(function(){
-    if ($(window).scrollTop() > 740){
+    if ($(window).scrollTop() > 500){
       $("nav").addClass("sticky");
        $(".nav-logo").addClass("logo-min-sticky");
        $(".nav-logo").removeClass("logo-min");

@@ -67,7 +67,7 @@ html, body{
 // 1. Main Page
 //----------------------------------------------------------
 #main-page{
-  height: 110%;
+  height: 100%;
   top: -70px;
   position: relative;
   background: linear-gradient(to bottom, transparent 80%, #FFFFFF),
@@ -125,6 +125,7 @@ nav{
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
   position: relative;
   .container-fluid{
+    padding-left: 30px;
     .nav-logo{
       position: absolute;
     }
@@ -274,10 +275,19 @@ nav{
 // 3. Portfolio
 //----------------------------------------------------------
 #portfolio{
-  height: 100%;
   color: $darkgrey;
   text-align: center;
   padding-bottom: 50px;
+  h2{
+    color: $darkgrey;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+  }
 }
 .photo-thumbb, .photo-thumbb>img, .photo-overlay, .photo-overlay>img {
   top: 0;
@@ -289,25 +299,7 @@ nav{
 }
 .photo-thumbb{
   position: relative;
-  h2{
-    color: white;
-    text-shadow: 0 0 15px black;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 25px;
-    line-height: 25px;
-    font-weight: bold;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  &:hover{
-    h2{      
-      font-size: 31px;
-    }
-  }
+  margin-bottom: 20px;
   .photo-overlay{
     position: absolute;
     z-index: 2;
@@ -315,6 +307,9 @@ nav{
     background: white;
     &:hover{
       opacity: 0.2;
+    }
+    .photo-overlay-btns{
+      color:
     }
   }
 }
@@ -324,6 +319,8 @@ nav{
 //----------------------------------------------------------
 #about{
   font-family: 'Raleway', sans-serif;//'Roboto Slab', serif;//'Roboto Mono', monospace;
+  margin-top: -70px;
+  padding-top: 70px;
   padding-bottom: 70px;
   font-weight: 500;
   font-size: 18px;

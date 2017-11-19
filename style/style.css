@@ -1,352 +1,65 @@
-@media only screen and (max-width: 1200px) {
-  body nav {
-    height: 50px; }
-    body nav .container-fluid .logo-min {
-      height: 30px;
-      top: 50%;
-      margin-top: -15px; }
-      body nav .container-fluid .logo-min .img-logo-min {
-        height: 30px; }
-    body nav .container-fluid .nav-links .nav-list {
-      justify-content: space-evenly;
-      font-size: 17px;
-      height: 50px; }
-      body nav .container-fluid .nav-links .nav-list li {
-        padding: 0 5px; }
-  body #main-page .logo img {
-    width: 300px; } }
-@media only screen and (max-width: 992px) {
-  body nav .container-fluid .nav-links .nav-list li {
-    padding: 5px 5px; } }
-@media only screen and (max-width: 723px) {
-  body nav .container-fluid .nav-links .nav-list .nav-a {
-    font-size: 15px;
-    padding: 0 2px !important; } }
-@media only screen and (max-width: 360px) {
-  body #main-page .logo img {
-    width: 250px; }
-  body #contact .map {
-    display: none; } }
-@media (min-width: 1200px) {
-  .container-fluid {
-    width: 1170px; } }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container-fluid {
-    width: 970px; } }
-@media (min-width: 768px) and (max-width: 969px) {
-  .container-fluid {
-    width: 750px; } }
-@media (min-width: 550px) and (max-width: 991px) {
-  #portfolio h2 {
-    font-size: 35px; }
-    #portfolio h2:hover {
-      font-size: 45px; } }
-@-webkit-keyframes jump {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  20% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  40% {
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px); }
-  50% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  60% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  80% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-@keyframes jump {
-  0% {
-    transform: translateY(0); }
-  20% {
-    transform: translateY(0); }
-  40% {
-    transform: translateY(20px); }
-  50% {
-    transform: translateY(0); }
-  60% {
-    transform: translateY(0); }
-  80% {
-    transform: translateY(0); }
-  100% {
-    transform: translateY(0); } }
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0; }
+/*
+Error: Invalid CSS after "      color:": expected expression (e.g. 1px, bold), was "}"
+        on line 313 of style.scss
 
-html, body {
-  height: 100%;
-  background-color: #FFFFFF;
-  font-family: 'Raleway', sans-serif; }
-  html a, body a {
-    color: #EFEFEF; }
-  html h1, body h1 {
-    text-transform: uppercase;
-    margin: 40px 0 50px 0;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center; }
-    html h1::before, html h1::after, body h1::before, body h1::after {
-      content: "";
-      display: inline-block;
-      height: 1px;
-      position: relative;
-      vertical-align: middle;
-      width: 30%;
-      margin: 0 20px; }
-  html .dark::before, body .dark::before {
-    background: linear-gradient(90deg, #171c20, #CFD2D2); }
-  html .dark::after, body .dark::after {
-    background: linear-gradient(90deg, #CFD2D2, #171c20); }
-  html .light::before, body .light::before {
-    background: linear-gradient(90deg, white, #171c20); }
-  html .light::after, body .light::after {
-    background: linear-gradient(90deg, #171c20, white); }
-  html ul, body ul {
-    list-style-type: circle; }
-  html section, body section {
-    padding: 20px 0 50px 0; }
+308:     &:hover{
+309:       opacity: 0.2;
+310:     }
+311:     .photo-overlay-btns{
+312:       color:
+313:     }
+314:   }
+315: }
+316: 
+317: //----------------------------------------------------------
+318: // 4. About
 
-#main-page {
-  height: 110%;
-  top: -70px;
-  position: relative;
-  background: linear-gradient(to bottom, transparent 80%, #FFFFFF), url("../img/tlo.jpg");
-  background-size: cover;
-  background-position: center;
-  text-align: center; }
-  #main-page .logo {
-    padding-top: 110px;
-    margin: 0; }
-    #main-page .logo img {
-      width: 400px; }
-  #main-page a {
-    position: absolute;
-    bottom: 80px;
-    text-align: center;
-    -webkit-animation: jump 1.5s ease 0s infinite normal;
-    animation: jump 1.5s ease 0s infinite normal; }
-    #main-page a i {
-      color: #171c20;
-      font-size: 45px;
-      opacity: 0.5; }
-      #main-page a i:hover {
-        color: #586363; }
-
-.sticky {
-  padding-top: 0;
-  position: fixed;
-  top: 0;
-  z-index: 3;
-  background-color: white;
-  border-bottom: #CFD2D2 1px solid;
-  border-radius: 0; }
-
-.navbar {
-  margin-bottom: 0; }
-
-nav {
-  width: 100%;
-  height: 70px;
-  background-color: rgba(255, 255, 255, 0.1);
-  z-index: 2;
-  /* For IE 5.5 - 7*/
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-  /* For IE 8*/
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-  position: relative; }
-  nav .container-fluid .nav-logo {
-    position: absolute; }
-  nav .container-fluid .logo-min {
-    height: 50px;
-    top: 50%;
-    margin-top: -25px; }
-    nav .container-fluid .logo-min .img-logo-min {
-      height: 50px; }
-  nav .container-fluid .logo-min-sticky {
-    height: 50px;
-    top: 50%;
-    margin-top: -25px; }
-    nav .container-fluid .logo-min-sticky .img-logo-sticky {
-      height: 50px;
-      content: url("../img/logo-aparat-czarne.png"); }
-  nav .container-fluid .navbar-header button i {
-    color: #EFEFEF; }
-  nav .container-fluid .navbar-header-sticky button i {
-    color: #666666; }
-  nav .container-fluid .nav-links.navbar-collapse.in {
-    overflow-y: visible; }
-    nav .container-fluid .nav-links.navbar-collapse.in .nav-list {
-      padding-top: 50px;
-      flex-flow: column nowrap;
-      align-items: flex-end; }
-  nav .container-fluid .nav-links .nav-list {
-    display: flex;
-    align-items: center;
-    height: 70px;
-    font-size: 20px; }
-    nav .container-fluid .nav-links .nav-list li {
-      list-style-type: none;
-      text-transform: uppercase;
-      padding-left: 25px; }
-      nav .container-fluid .nav-links .nav-list li .nav-a {
-        text-decoration: none;
-        padding: 0 5px; }
-        nav .container-fluid .nav-links .nav-list li .nav-a:hover {
-          border-bottom: 1px solid;
-          color: #EFEFEF;
-          background-color: transparent; }
-        nav .container-fluid .nav-links .nav-list li .nav-a:focus {
-          border-bottom: 1px solid;
-          color: #EFEFEF;
-          background-color: transparent; }
-      nav .container-fluid .nav-links .nav-list li .nav-a-sticky {
-        color: #666666; }
-        nav .container-fluid .nav-links .nav-list li .nav-a-sticky:hover {
-          border-bottom: 1px solid #666666;
-          color: #666666; }
-        nav .container-fluid .nav-links .nav-list li .nav-a-sticky:focus {
-          border-bottom: 1px solid;
-          color: #666666; }
-  nav .container-fluid .nav-links .nav-list-sticky {
-    height: 50px; }
-
-#offert {
-  background-image: url("../img/oferta.jpg");
-  height: 95%;
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #171c20;
-  font-size: 17px;
-  text-align: center; }
-  #offert .offert-text {
-    text-align: center;
-    margin: 80px 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
-    padding: 15px; }
-    #offert .offert-text .offert-title {
-      font-size: 18px;
-      font-weight: bold;
-      text-transform: uppercase;
-      padding: 5px 0; }
-  #offert .contact-btn-container {
-    margin-top: 60px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 30px;
-    padding: 15px 0; }
-    #offert .contact-btn-container .contact-button {
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-      color: #171c20;
-      padding: 15px; }
-      #offert .contact-btn-container .contact-button i {
-        padding-left: 20px; }
-      #offert .contact-btn-container .contact-button:hover {
-        color: #EFEFEF;
-        background-color: rgba(255, 255, 255, 0.2); }
-
-#area {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: center;
-  padding: 0;
-  margin: 40px 0; }
-
-#portfolio {
-  height: 100%;
-  color: #171c20;
-  text-align: center;
-  padding-bottom: 50px; }
-
-.photo-thumbb, .photo-thumbb > img, .photo-overlay, .photo-overlay > img {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%; }
-
-.photo-thumbb {
-  position: relative; }
-  .photo-thumbb h2 {
-    color: white;
-    text-shadow: 0 0 15px black;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 25px;
-    line-height: 25px;
-    font-weight: bold;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  .photo-thumbb:hover h2 {
-    font-size: 31px; }
-  .photo-thumbb .photo-overlay {
-    position: absolute;
-    z-index: 2;
-    opacity: 0;
-    background: white; }
-    .photo-thumbb .photo-overlay:hover {
-      opacity: 0.2; }
-
-#about {
-  font-family: 'Raleway', sans-serif;
-  padding-bottom: 70px;
-  font-weight: 500;
-  font-size: 18px;
-  text-align: justify; }
-
-#contact {
-  text-align: center;
-  background-color: #171c20;
-  color: #CFD2D2;
-  font-size: 17px; }
-  #contact .container .form-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; }
-    #contact .container .form-cont .label-cont {
-      font-weight: 400; }
-    #contact .container .form-cont .input-cont {
-      width: 100%;
-      background-color: #EFEFEF;
-      color: #171c20;
-      border: none; }
-    #contact .container .form-cont textarea {
-      background-color: #EFEFEF;
-      color: #171c20;
-      width: 100%;
-      height: 100px;
-      resize: vertical; }
-    #contact .container .form-cont button {
-      text-transform: uppercase;
-      font-weight: 500; }
-  #contact .container .item {
-    margin-bottom: 10px; }
-  #contact .container .fa-inverse {
-    color: #171c20; }
-
-footer {
-  background-color: rgba(23, 28, 31, 0.9);
-  height: 40px;
-  padding: 10px 0;
-  color: #CFD2D2; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:313
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1189:in `expected'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/lexer.rb:229:in `expected!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/parser.rb:704:in `assert_expr'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/parser.rb:75:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1051:in `sass_script'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:897:in `value!'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:769:in `block in try_declaration'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:1165:in `rethrow'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:782:in `try_declaration'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:711:in `declaration_or_ruleset'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:665:in `block_contents'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:726:in `declaration_or_ruleset'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:676:in `block_child'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:657:in `block'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:649:in `ruleset'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:675:in `block_child'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:668:in `block_contents'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:125:in `stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:406:in `_to_tree'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"      color:\": expected expression (e.g. 1px, bold), was \"}\"\A         on line 313 of style.scss\A \A 308:     &:hover{\A 309:       opacity: 0.2;\A 310:     }\A 311:     .photo-overlay-btns{\A 312:       color:\A 313:     }\A 314:   }\A 315: }\A 316: \A 317: //----------------------------------------------------------\A 318: // 4. About"; }

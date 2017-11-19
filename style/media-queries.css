@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1200px) {
+  body nav .container-fluid .logo-min {
+    height: 30px;
+    top: 50%;
+    margin-top: -15px; }
+    body nav .container-fluid .logo-min .img-logo-min {
+      height: 30px; }
+  body #main-page .logo img {
+    width: 300px; }
+  body #contact .map {
+    display: none; } }
+@media only screen and (max-width: 565px) {
+  body h1::before, body h1::after {
+    width: 20%; } }
+@media only screen and (max-width: 360px) {
+  body #main-page .logo img {
+    width: 250px; } }
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1170px; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container-fluid {
+    width: 970px; } }
+@media (min-width: 768px) and (max-width: 969px) {
+  .container-fluid {
+    width: 750px; } }
+@media (min-width: 550px) and (max-width: 991px) {
+  #portfolio h2 {
+    font-size: 35px; }
+    #portfolio h2:hover {
+      font-size: 45px; } }
+
+/*# sourceMappingURL=media-queries.css.map */
