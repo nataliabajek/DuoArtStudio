@@ -2,53 +2,52 @@
 // Media Queries for DuoArtStudio by NataliaBajek
 // -------------------------------------------
 @media only screen and (max-width: 1200px){
-	body{
-		#main-page{
-			.logo{
-		    img{
-		      width: 300px;
-		    }
-		  }
-		}
-		#contact{
-			.map{
-				display: none;
-			}
-		}	
+	#main-page{
+		.logo{
+	    img{
+	      width: 300px;
+	    }
+	  }
 	}
+	#contact{
+		.map{
+			display: none;
+		}
+	}	
 }
 @media only screen and (max-width: 565px){
-	body{
-		h1{
-			&::before, &::after{
-				width: 20%;
-			}
+	h1{
+		&::before, &::after{
+			width: 20%;
 		}
 	}
 }
-@media only screen and (max-width: 360px){
-	body{
-		#main-page{
-			.logo{
-				img{
-					width: 250px;
-				}
-			}
-		}
-	}
+@media (min-width: 830px) and (max-width: 1000px) {
+ .collapse {
+     display: none !important;
+ }
 }
-@media (min-width: 1200px){
-  .container-fluid{
-    width: 1170px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px){
-	.container-fluid {
-    width: 970px;
-  }
-}
-@media (min-width: 768px) and (max-width: 969px){
-	.container-fluid {
-    width: 750px;
-  }
-}
+// @media only screen and (max-width: 360px){
+// 	#main-page{
+// 		.logo{
+// 			img{
+// 				width: 250px;
+// 			}
+// 		}
+// 	}
+// }
+// @media (min-width: 1200px){
+//   .container-fluid{
+//     width: 1170px;
+//   }
+// }
+// @media (min-width: 992px) and (max-width: 1199px){
+// 	.container-fluid {
+//     width: 970px;
+//   }
+// }
+// @media (min-width: 768px) and (max-width: 969px){
+// 	.container-fluid {
+//     width: 750px;
+//   }
+// }

@@ -1,23 +1,15 @@
 @media only screen and (max-width: 1200px) {
-  body #main-page .logo img {
+  #main-page .logo img {
     width: 300px; }
-  body #contact .map {
+
+  #contact .map {
     display: none; } }
 @media only screen and (max-width: 565px) {
-  body h1::before, body h1::after {
+  h1::before, h1::after {
     width: 20%; } }
-@media only screen and (max-width: 360px) {
-  body #main-page .logo img {
-    width: 250px; } }
-@media (min-width: 1200px) {
-  .container-fluid {
-    width: 1170px; } }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container-fluid {
-    width: 970px; } }
-@media (min-width: 768px) and (max-width: 969px) {
-  .container-fluid {
-    width: 750px; } }
+@media (min-width: 830px) and (max-width: 1000px) {
+  .collapse {
+    display: none !important; } }
 @-webkit-keyframes jump {
   0% {
     -webkit-transform: translateY(0);
@@ -64,53 +56,117 @@ html, body {
   height: 100%;
   background-color: #FFFFFF;
   font-family: 'Raleway', sans-serif; }
-  html a, body a {
+
+body {
+  background: linear-gradient(to bottom, transparent 80%, #FFFFFF), url("../img/tlo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
+a {
+  color: #EFEFEF; }
+
+h1 {
+  text-transform: uppercase;
+  margin: 40px 0 50px 0;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center; }
+  h1::before, h1::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+    margin: 0 20px; }
+
+h2 {
+  color: #171c20;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 10px; }
+
+.dark::before {
+  background: linear-gradient(90deg, #171c20, #CFD2D2); }
+.dark::after {
+  background: linear-gradient(90deg, #CFD2D2, #171c20); }
+
+.light::before {
+  background: linear-gradient(90deg, white, #171c20); }
+.light::after {
+  background: linear-gradient(90deg, #171c20, white); }
+
+ul {
+  list-style-type: circle; }
+
+section {
+  padding: 20px 0 50px 0; }
+  section:focus {
+    outline-color: transparent; }
+
+.sticky {
+  padding-top: 0;
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  top: 0;
+  z-index: 3;
+  background-color: white;
+  border-bottom: #CFD2D2 1px solid;
+  border-radius: 0; }
+  .sticky .fa-bars {
+    color: #666666; }
+  .sticky #main-nav .nav-a {
+    color: #666666; }
+    .sticky #main-nav .nav-a:hover {
+      border-bottom: 1px solid #666666;
+      color: #666666; }
+    .sticky #main-nav .nav-a:focus {
+      border-bottom: 1px solid;
+      color: #666666; }
+  .sticky .navbar-header img {
+    content: url("../img/logo-aparat-czarne.png"); }
+
+nav {
+  margin-bottom: 0;
+  border-radius: 0;
+  padding: 10px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+  border: transparent; }
+  nav .fa-bars {
     color: #EFEFEF; }
-  html h1, body h1 {
-    text-transform: uppercase;
-    margin: 40px 0 50px 0;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center; }
-    html h1::before, html h1::after, body h1::before, body h1::after {
-      content: "";
-      display: inline-block;
-      height: 1px;
-      position: relative;
-      vertical-align: middle;
-      width: 30%;
-      margin: 0 20px; }
-  html h2, body h2 {
-    color: #171c20;
-    text-transform: uppercase;
-    margin: 0;
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 10px; }
-  html .dark::before, body .dark::before {
-    background: linear-gradient(90deg, #171c20, #CFD2D2); }
-  html .dark::after, body .dark::after {
-    background: linear-gradient(90deg, #CFD2D2, #171c20); }
-  html .light::before, body .light::before {
-    background: linear-gradient(90deg, white, #171c20); }
-  html .light::after, body .light::after {
-    background: linear-gradient(90deg, #171c20, white); }
-  html ul, body ul {
-    list-style-type: circle; }
-  html section, body section {
-    padding: 20px 0 50px 0; }
-    html section:focus, body section:focus {
-      outline-color: transparent; }
+
+#main-nav li {
+  padding: 15px 14px 0 14px; }
+
+#main-nav .nav-a {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 3px 5px;
+  border-bottom: 1px solid transparent;
+  display: inline-block; }
+  #main-nav .nav-a:hover {
+    border-bottom: 1px solid #EFEFEF;
+    color: #EFEFEF;
+    background-color: transparent; }
+  #main-nav .nav-a:focus {
+    border-bottom: 1px solid #EFEFEF;
+    color: #EFEFEF;
+    background-color: transparent; }
 
 #main-page {
   height: 100%;
   top: -70px;
   position: relative;
-  background: linear-gradient(to bottom, transparent 80%, #FFFFFF), url("../img/tlo.jpg");
-  background-size: cover;
-  background-position: center;
   text-align: center; }
   #main-page .logo {
     padding-top: 110px;
@@ -129,87 +185,6 @@ html, body {
       opacity: 0.5; }
       #main-page a i:hover {
         color: #586363; }
-
-.sticky {
-  padding-top: 0;
-  position: fixed;
-  top: 0;
-  z-index: 3;
-  background-color: white;
-  border-bottom: #CFD2D2 1px solid;
-  border-radius: 0; }
-
-.navbar {
-  margin-bottom: 0; }
-
-nav {
-  width: 100%;
-  height: 70px;
-  background-color: rgba(255, 255, 255, 0.1);
-  z-index: 2;
-  /* For IE 5.5 - 7*/
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
-  /* For IE 8*/
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
-  position: relative; }
-  nav .container-fluid {
-    padding-left: 30px; }
-    nav .container-fluid .nav-logo {
-      position: absolute; }
-    nav .container-fluid .logo-min {
-      height: 50px;
-      top: 50%;
-      margin-top: -25px; }
-      nav .container-fluid .logo-min .img-logo-min {
-        height: 50px; }
-    nav .container-fluid .logo-min-sticky {
-      height: 50px;
-      top: 50%;
-      margin-top: -25px; }
-      nav .container-fluid .logo-min-sticky .img-logo-sticky {
-        height: 50px;
-        content: url("../img/logo-aparat-czarne.png"); }
-    nav .container-fluid .navbar-header button i {
-      color: #EFEFEF; }
-    nav .container-fluid .navbar-header-sticky button i {
-      color: #666666; }
-    nav .container-fluid .nav-links.navbar-collapse.in {
-      overflow-y: visible; }
-      nav .container-fluid .nav-links.navbar-collapse.in .nav-list {
-        padding-top: 50px;
-        flex-flow: column nowrap;
-        align-items: flex-end; }
-    nav .container-fluid .nav-links .nav-list {
-      display: flex;
-      align-items: center;
-      height: 70px;
-      font-size: 20px; }
-      nav .container-fluid .nav-links .nav-list li {
-        list-style-type: none;
-        text-transform: uppercase;
-        padding-left: 25px; }
-        nav .container-fluid .nav-links .nav-list li .nav-a {
-          text-decoration: none;
-          padding: 0 5px;
-          border-bottom: 1px solid transparent; }
-          nav .container-fluid .nav-links .nav-list li .nav-a:hover {
-            border-bottom: 1px solid #EFEFEF;
-            color: #EFEFEF;
-            background-color: transparent; }
-          nav .container-fluid .nav-links .nav-list li .nav-a:focus {
-            border-bottom: 1px solid #EFEFEF;
-            color: #EFEFEF;
-            background-color: transparent; }
-        nav .container-fluid .nav-links .nav-list li .nav-a-sticky {
-          color: #666666; }
-          nav .container-fluid .nav-links .nav-list li .nav-a-sticky:hover {
-            border-bottom: 1px solid #666666;
-            color: #666666; }
-          nav .container-fluid .nav-links .nav-list li .nav-a-sticky:focus {
-            border-bottom: 1px solid;
-            color: #666666; }
-    nav .container-fluid .nav-links .nav-list-sticky {
-      height: 50px; }
 
 #offert {
   background-image: url("../img/oferta.jpg");
