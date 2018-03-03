@@ -145,15 +145,16 @@
     <h1 class="dark">Kontakt</h1>
     <div class="container">
       <div class="col-lg-4 col-sm-8">
-        <form class="form-cont" action="http://formspree.io/nataliabajek92@gmail.com" method="POST">
+        <div id="form-messages"></div>
+        <form class="form-cont" id="ajax-contact" method="post" action="mailer.php">
           <label class="label-cont" for="name">Imię i nazwisko:</label>
-          <input class="input-cont" type="text" name="name" /><br>
+          <input class="input-cont" type="text" id="name" name="name" required><br>
           <label class="label-cont" for="mail">E-mail:</label>
-          <input class="input-cont" type="email" name="_replyto" /><br>
-          <label class="label-cont" for="phone">Telefon:</label>
-          <input class="input-cont" type="text" name="phone" /><br>
-          <label class="label-cont" for="msg">Wiadomość:</label>
-          <textarea id="msg" name="message"></textarea><br>
+          <input class="input-cont" type="email" id="email" name="email" required><br>
+<!--           <label class="label-cont" for="phone">Telefon:</label>
+          <input class="input-cont" type="text" id="phone" name="phone" required><br> -->
+          <label class="label-cont" for="message">Wiadomość:</label>
+          <textarea id="message" name="message" required></textarea><br>
           <button class="btn btn-default" type="submit">Wyślij wiadomość</button>
         </form> 
       </div>
