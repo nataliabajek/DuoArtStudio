@@ -82,4 +82,11 @@ $(document).ready(function() {
     }).scroll(); 
   });
 
+  //-----------------------------------------------------------
+  // Hide navbar collapse after click
+  //----------------------------------------------------------- 
+  $('.nav a').on('click', function(){
+      $('.navbar-toggle').click()
+  });
+
 });
