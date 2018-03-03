@@ -90,7 +90,7 @@ $(document).ready(function() {
   });
 
   //-----------------------------------------------------------
-  // EMAIL 
+  // EMAIL
   //----------------------------------------------------------- 
   $(function() {
 
@@ -111,7 +111,7 @@ $(document).ready(function() {
       // Submit the form using AJAX.
       $.ajax({
         type: 'POST',
-        url: 'https://' + $(form).attr('action'),
+        url: $(form).attr('action'),
         data: formData
       })
       .done(function(response) {
