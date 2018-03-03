@@ -1,46 +1,50 @@
 @media only screen and (max-width: 1200px) {
-  body nav {
-    height: 50px; }
-    body nav .container-fluid .logo-min {
-      height: 30px;
-      top: 50%;
-      margin-top: -15px; }
-      body nav .container-fluid .logo-min .img-logo-min {
-        height: 30px; }
-    body nav .container-fluid .nav-links .nav-list {
-      justify-content: space-evenly;
-      font-size: 17px;
-      height: 50px; }
-      body nav .container-fluid .nav-links .nav-list li {
-        padding: 0 5px; }
-  body #main-page .logo img {
-    width: 300px; } }
-@media only screen and (max-width: 992px) {
-  body nav .container-fluid .nav-links .nav-list li {
-    padding: 5px 5px; } }
-@media only screen and (max-width: 723px) {
-  body nav .container-fluid .nav-links .nav-list .nav-a {
-    font-size: 15px;
-    padding: 0 2px !important; } }
-@media only screen and (max-width: 360px) {
-  body #main-page .logo img {
-    width: 250px; }
-  body #contact .map {
+  #main-page .logo img {
+    width: 300px; }
+
+  #contact .map {
     display: none; } }
-@media (min-width: 1200px) {
-  .container-fluid {
-    width: 1170px; } }
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container-fluid {
-    width: 970px; } }
-@media (min-width: 768px) and (max-width: 969px) {
-  .container-fluid {
-    width: 750px; } }
-@media (min-width: 550px) and (max-width: 991px) {
-  #portfolio h2 {
-    font-size: 35px; }
-    #portfolio h2:hover {
-      font-size: 45px; } }
+@media only screen and (max-width: 565px) {
+  h1::before, h1::after {
+    width: 20%; } }
+@media (max-width: 830px) {
+  .navbar-header {
+    float: none; }
+
+  .navbar-left {
+    float: none !important; }
+
+  .navbar-right {
+    float: right !important;
+    text-align: right; }
+
+  .navbar-toggle {
+    display: block; }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px; }
+
+  .navbar-nav > li {
+    float: none; }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .collapse.in {
+    display: block !important; } }
 * {
   box-sizing: border-box;
   padding: 0;
@@ -54,47 +58,32 @@ html, body {
     color: #171c20; }
 
 nav {
-  width: 100%;
-  height: 70px;
+  border-radius: 0;
+  padding: 10px;
+  z-index: 1;
   background-color: white;
-  z-index: 2;
-  position: relative; }
-  nav .container-fluid .nav-logo {
-    position: absolute; }
-  nav .container-fluid .logo-min {
-    height: 50px;
-    top: 50%;
-    margin-top: -25px; }
-    nav .container-fluid .logo-min .img-logo-min {
-      height: 50px; }
-  nav .container-fluid .navbar-header button i {
-    color: #EFEFEF; }
-  nav .container-fluid .nav-links.navbar-collapse.in {
-    overflow-y: visible; }
-    nav .container-fluid .nav-links.navbar-collapse.in .nav-list {
-      padding-top: 50px;
-      flex-flow: column nowrap;
-      align-items: flex-end; }
-  nav .container-fluid .nav-links .nav-list {
-    display: flex;
-    align-items: center;
-    height: 70px;
-    font-size: 20px; }
-    nav .container-fluid .nav-links .nav-list li {
-      list-style-type: none;
-      text-transform: uppercase;
-      padding-left: 25px; }
-      nav .container-fluid .nav-links .nav-list li .nav-a {
-        text-decoration: none;
-        padding: 0 5px; }
-        nav .container-fluid .nav-links .nav-list li .nav-a:hover {
-          border-bottom: 1px solid;
-          color: #171c20;
-          background-color: transparent; }
-        nav .container-fluid .nav-links .nav-list li .nav-a:focus {
-          border-bottom: 1px solid;
-          color: #171c20;
-          background-color: transparent; }
+  border: transparent; }
+  nav .fa-bars {
+    color: #666666; }
+
+#main-nav li {
+  padding: 15px 14px 0 14px; }
+
+#main-nav .nav-a {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 3px 5px;
+  border-bottom: 1px solid transparent;
+  display: inline-block;
+  color: #666666; }
+  #main-nav .nav-a:hover {
+    border-bottom: 1px solid #666666;
+    color: #666666;
+    background-color: transparent; }
+  #main-nav .nav-a:focus {
+    border-bottom: 1px solid #666666;
+    color: #666666;
+    background-color: transparent; }
 
 .gallery .item img {
   height: 600px; }

@@ -168,7 +168,6 @@ section {
     content: url("../img/logo-aparat-czarne.png"); }
 
 nav {
-  margin-bottom: 0;
   border-radius: 0;
   padding: 10px;
   z-index: 1;
@@ -204,7 +203,7 @@ nav {
   position: relative;
   text-align: center; }
   #main-page .logo {
-    padding-top: 110px;
+    padding-top: 70px;
     margin: 0; }
     #main-page .logo img {
       width: 400px; }
