@@ -111,7 +111,7 @@ $(document).ready(function() {
       // Submit the form using AJAX.
       $.ajax({
         type: 'POST',
-        url: $(form).attr('action'),
+        url: 'http://' + $(form).attr('action'),
         data: formData
       })
       .done(function(response) {
